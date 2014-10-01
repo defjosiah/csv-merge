@@ -33,6 +33,8 @@ And merges them together into a markdown file with a per row replacement for the
 column names wherever there is an angle bracket in the template. 
 
 Generally, this output is run through "pandoc" with css in order to make it 
-look pretty and output to a pdf. 
+look pretty and output to a pdf. e.g. 
+
+> $ python csv_merge.py | pandoc -c css/something.css -o combined.html
 
 I'm sure something similar exists, but this is simple, and effective. 
